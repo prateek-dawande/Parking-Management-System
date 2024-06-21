@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Parking Management System";
+}
+
+<!-- Enhanced CSS for improved styling -->
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-section {
+        text-align: center;
+        padding: 50px;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: white;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+        .main-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 0;
+    }
+
+    .feature {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #6a11cb;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .contact-form div {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+    .auth-buttons {
+        margin-top: 20px;
+    }
+
+        .auth-buttons a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+            .auth-buttons a.btn-primary {
+                background-color: #007bff;
+            }
+
+                .auth-buttons a.btn-primary:hover {
+                    background-color: #0056b3;
+                }
+
+            .auth-buttons a.btn-secondary {
+                background-color: #6c757d;
+            }
+
+                .auth-buttons a.btn-secondary:hover {
+                    background-color: #5a6268;
+                }
+</style>
+
+<div class="main-section">
+    <h1>Welcome to the Parking Management System</h1>
+    <p>Efficient and convenient parking management at your fingertips.</p>
+    <div class="auth-buttons">
+        <a asp-controller="User" asp-action="UserLogin" class="btn btn-primary">Login</a>
+        <a asp-controller="User" asp-action="AddUser" class="btn btn-secondary">Sign Up</a>
+    </div>
+</div>
+
+<div class="features">
+    <div class="feature">
+        <h3>Real-time Availability</h3>
+        <p>Check available parking spots in real-time.</p>
+    </div>
+    <div class="feature">
+        <h3>Easy Reservations</h3>
+        <p>Reserve your parking spot in advance.</p>
+    </div>
+
+</div>

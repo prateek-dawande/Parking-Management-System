@@ -1,0 +1,24 @@
+﻿@model ParkingManagementSystem.Models.CreateBookingViewModel
+
+@{
+    ViewBag.Title = "Enter Booking Details";
+}
+
+<h2>Enter Booking Details</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(model => model.UserId)
+    @Html.HiddenFor(model => model.SlotId)
+    @Html.HiddenFor(model => model.BookingDate)
+
+    <div class="form-group mb-3">
+        @Html.LabelFor(model => model.CarNumber, htmlAttributes: new { @class = "control-label" })
+        @Html.TextBoxFor(model => model.CarNumber, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CarNumber, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+}

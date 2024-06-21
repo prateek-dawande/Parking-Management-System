@@ -1,0 +1,30 @@
+﻿@model ParkingManagementSystem.Models.SelectSlotViewModel
+
+@{
+    ViewData["Title"] = "Select Parking Slot";
+}
+
+<h2>Select Parking Slot for @Model.BookingDate.ToString("d")</h2>
+
+<form asp-action="SelectSlot" method="post">
+    <input type="hidden" asp-for="BookingDate" />
+    <div class="row">
+        @foreach (var slot in Model.Slots)
+        {
+            string slotColor = slot.IsAvaiable ? "green" : "blue";
+            <div class="col-md-3">
+                <div style="background-color:@slotColor; padding:10px; margin:5px; border-radius:5px;">
+                    <p>@slot.SlotNumber</p>
+                    @if (slot.IsAvaiable)
+                    {
+                        <button type="submit" name="SelectedSlotId" value="@slot.SlotId" class="btn btn-success">Book Slot</button>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-primary" disabled>Unavailable</button>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</form>

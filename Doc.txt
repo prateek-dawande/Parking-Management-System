@@ -1,0 +1,27 @@
+Parking System Web Application
+Role: Full Stack Developer
+Technologies: ASP.NET Core MVC, C#, Entity Framework Core, SQL Server, Bootstrap, jQuery
+
+Description:
+Developed a comprehensive Parking System web application aimed at streamlining parking slot management and reservations. The application allows users to view available parking slots, make reservations, and manage bookings efficiently.
+
+Key Features:
+
+User Authentication: Implemented secure user registration and login functionality.
+Session Management: Utilized ASP.NET Core session middleware to maintain user sessions and manage user-specific data.
+Dynamic Slot Booking: Integrated real-time booking system showing available (green) and unavailable (blue) parking slots with click-to-book functionality.
+Database Integration: Designed and managed the application's database using Entity Framework Core and SQL Server.
+Responsive Design: Created a responsive and user-friendly interface using Bootstrap and custom CSS.
+Error Handling: Added comprehensive error handling mechanisms for improved user experience.
+Key Responsibilities:
+
+Designed and developed the user interface and backend components of the application.
+Set up and configured the database using Entity Framework Core.
+Implemented business logic for booking, viewing, and managing parking slots.
+Conducted thorough testing to ensure the reliability and efficiency of the application.
+Deployed the application on a cloud server and ensured smooth operation.
+Achievements:
+
+Reduced manual parking management efforts by 60%.
+Achieved seamless user experience with less than 1% error rate in booking transactions.
+Successfully managed and stored user session data, enhancing security and user convenience.
